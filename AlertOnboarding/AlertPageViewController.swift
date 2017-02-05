@@ -120,6 +120,8 @@ class AlertPageViewController: UIViewController, UIPageViewControllerDataSource,
         pageContentViewController.labelMainTitle.textColor = alertview.colorTitleLabel
         pageContentViewController.labelDescription.text = arrayOfDescription[realIndex]
         pageContentViewController.labelDescription.textColor = alertview.colorDescriptionLabel
+        pageContentViewController.labelMainTitle.font = UIFont.init(name: "AvenirNext-Medium", size: 25)
+        pageContentViewController.labelDescription.font = UIFont.init(name: "Avenir Next", size: 18)
         
         return pageContentViewController
     }
